@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+html{
+    font-size: 62.5%;
+}
+/* navbar-start */
+.navbar{
+    width:100%;
+    height: 7rem;
+    background-color: rgba(0,0,0,0.6);
+    position:fixed;
+    top:-8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation:navshow 0.8s 1s forwards;
+}
+
+@keyframes navshow {
+    0%{
+        top:-8rem;
+    }
+    100%{
+        top:0rem;
+    }
+}
+
+.navbar h1{
+    color: white;
+    margin-left:3rem;
+    font-size: 3.5rem;
+    text-transform: capitalize;
+}
+
+.nav-list{
+   width:50%;
+   display:flex;
+   justify-content: space-evenly;
+}
+
+.nav-link{
+    font-size: 2.3rem;
+    color:white;
+    font-family: 'Bree Serif', serif;
+    transition:color 0.3s;
+}
+
+.nav-link:hover{
+    color:rgb(247, 163, 163);
+}
+    
+
+/* navbar-end */
+
+
+/* section 1 start */
+.section-1{
+    width:100%;
+    height: 100vh;
+    background: linear-gradient(to left,rgba(0,0,0,0.6),rgba(0,0,0,0.4)
+    ),url("images/headImage.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-content{
+    width:100%;
+    height:30rem;
+}
+
+.section-1-heading{
+    width: 100%;
+    font-size: 8rem;
+    font-family: 'Baloo Chettan 2', cursive;
+    text-align: center;
+    color: white;
+    text-transform: capitalize;
+    text-shadow: 0.3rem 0.3rem 0.8rem rgb(51, 35, 35);
+    letter-spacing: 0.2rem;
+}
+.section-1-heading span{
+    color:sandybrown;
+    animation: title 2s 1s infinite;
+}
+
+@keyframes title {
+    0%{
+        color:sandybrown;
+    }
+    25%{
+        color:rgba(233, 196, 128, 0.973);
+    }
+    50%{
+        color:rgba(226, 157, 215, 0.418);
+    }
+    100%{
+        color:rgb(223, 151, 110);
+    }
+}
+
+.section-1-para{
+    width: 57%;
+    font-size: 3rem;
+    color: rgb(230, 219, 197);
+    padding: 3rem 1rem 2rem 1rem;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    margin: 0 auto 2rem auto;
+    background-color: rgba(0,0,0,0.2);
+    box-shadow: 0.7rem 0.8rem 1.5rem rgb(170, 162, 162);
+   
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+       <h1>foodofest</h1>
+       <div class="nav-list">
+           <a href="#" class="nav-link">Home</a>
+           <a href="jassclass.html" class="nav-link">Meals</a>
+           <a href="#" class="nav-link">About Us</a>
+           <a href="#" class="nav-link">Order Now</a>
+       </div>
+    </nav>
+
+    <div class="menu">
+        <div class="line line-1"></div>
+        <div class="line line-1"></div>
+        <div class="line line-1"></div>
+    </div>
+  <div class="container">
+    <section class="section-1">
+      <div class="banner-content">
+        <h1 class="section-1-heading">welcome to <span>foodofest</span></h1>
+        <p class="section-1-para">
+          Want a delicious meal , but no time we will provide you hot and yummy
+          food of your choice.<br>
+          Just eat and forget everything else.
+        </p>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
